@@ -1,0 +1,76 @@
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.jahall.rocket_game.test.MainActivity">
+
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|top"
+        android:visibility="visible"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:text="1 - 1"
+        android:id="@+id/the_world"
+        android:singleLine="false"
+        android:textColor="#ffffff"
+        android:background="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed: ?"
+        android:id="@+id/the_speed"
+        android:layout_below="@+id/the_fuel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="top"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel: ?"
+        android:id="@+id/the_fuel"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:layout_gravity="center_horizontal" />
+
+     <com.jahall.rocket_game.test.Background
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/the_canvas"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="false" />
+</LinearLayout>
